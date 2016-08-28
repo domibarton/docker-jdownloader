@@ -49,9 +49,29 @@ Please mount the following volumes inside your JDownloader container:
 * `/jdownloader/cfg`: Holds all the JDownloader configuration files
 * `/media`: Directory for downloaded media
 
-### Configuration file
+### Configuration files
 
-By default the JDownloader configuration files are located on `/jdownloader/cfg`.
+The JDownloader configuration files are located on `/jdownloader/cfg`, respectively your mounted directory on the host.
+
+### Downloader directory
+
+To change the download directory, you've to edit the file `/jdownloader/cfg/org.jdownloader.settings.GeneralSettings.json` and add the following setting:
+
+```
+"defaultdownloadfolder" : "/media"
+```
+
+### My JDownloader credentials
+
+If you want to use the [My JDownloader WebUI](https://my.jdownloader.org), you've to configure your credentials in the `/jdownloader/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json` configuration file. Here's an example content:
+
+```
+{
+  "autoconnectenabledv2" : true,
+  "email" : "your@mail.address",
+  "password" : "your_secret_password",
+}
+```
 
 ### UID and GID
 
