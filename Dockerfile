@@ -6,7 +6,7 @@ MAINTAINER Dominique Barton
 #
 
 RUN groupadd -r -g 666 jdownloader \
-    && useradd -r -u 666 -g 666 -d /jdownloader jdownloader
+    && useradd -r -u 666 -g 666 -d /jdownloader -m jdownloader
 
 #
 # Add JDownloader init script.
