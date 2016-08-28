@@ -1,0 +1,8 @@
+---
+jdownloader:
+    build: .
+    container_name: 'jdownloader'
+    volumes:
+        - './data/cfg:/jdownloader/cfg'
+        - './data/media:/media'
+    restart: 'always'
