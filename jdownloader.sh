@@ -38,4 +38,4 @@ echo "[DONE]"
 #
 
 echo "Starting JDownloader..."
-exec su -pc "java -Djava.awt.headless=true -jar JDownloader.jar" ${USER}
+exec su -pc "java -Djava.awt.headless=true -jar JDownloader.jar -norestart" ${USER}
