@@ -15,7 +15,7 @@ The Docker image currently supports:
 To run the JDownloader container you can execute:
 
 ```bash
-docker run --name jdownloader -v <cfg path>:/jdownloader/cfg -v <media path>:/media domibarton/jdownloader
+docker run --name jdownloader -v <cfg path>:/jdownloader/cfg -v <media path>:/media dbarton/jdownloader
 ```
 
 ### Run via Docker Compose
@@ -32,7 +32,7 @@ If you want to use the Docker Hub image within your existing Docker Compose file
 
 ```yaml
 jdownloader:
-    image: "domibarton/jdownloader"
+    image: "dbarton/jdownloader"
     container_name: "jdownloader"
     volumes:
         - "<cfg path>:/jdownloader/cfg"
