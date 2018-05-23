@@ -63,7 +63,7 @@ If you want to use the [My JDownloader WebUI](https://my.jdownloader.org), you'v
 {
   "autoconnectenabledv2" : true,
   "email" : "your@mail.address",
-  "password" : "your_secret_password",
+  "password" : "your_secret_password"
 }
 ```
 
